@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad de Bob3D</title>
+<meta name="description" content="Qué datos usa Bob3D, dónde quedan y cuándo salen del equipo.">
+<style>
+  :root {
+    --fondo: #ffffff;
+    --texto: #1d1d1f;
+    --suave: #5f6368;
+    --linea: #e3e3e6;
+    --enlace: #0b62d6;
+    --caja: #f4f6f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fondo: #121214;
+      --texto: #ececef;
+      --suave: #a4a7ad;
+      --linea: #2c2c31;
+      --enlace: #6ea8ff;
+      --caja: #1c1d21;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--linea); }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; margin: 0 0 10px; }
+  a { color: var(--enlace); }
+  .fecha { color: var(--suave); margin-bottom: 22px; }
+  .resumen { background: var(--caja); border-radius: 12px; padding: 16px 18px 6px; }
+  .resumen h2 { border: 0; margin-top: 0; padding-top: 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad de Bob3D</h1>
+  <p class="fecha">Vigente desde el 8 de noviembre de 2026.</p>
+
+  <p>Bob3D mide espacios con el LiDAR del iPhone o del iPad y pone el plano sobre el piso real. Esta página dice qué
+  datos usa la app, dónde quedan y cuándo salen de tu equipo.</p>
+
+  <section class="resumen">
+    <h2>En resumen</h2>
+    <ul>
+      <li>Bob3D no tiene cuentas ni servidores propios. Lo que haces en la app queda en tu equipo.</li>
+      <li>Solo cuando pides algo con IA, la app le manda a Claude, de Anthropic, lo que hace falta para esa tarea, con tu
+      propia clave.</li>
+      <li>La app no le manda a nadie tu ubicación ni el movimiento del equipo.</li>
+      <li>No hay publicidad, ni analítica, ni rastreo.</li>
+    </ul>
+  </section>
+
+  <h2>Qué guarda la app en tu equipo</h2>
+  <ul>
+    <li><strong>Los escaneos:</strong> la forma 3D del lugar, las fotos que toma la cámara durante el escaneo y las
+    medidas.</li>
+    <li><strong>La ubicación del lugar,</strong> si le das permiso. Se guarda junto al escaneo para saber de qué obra
+    es.</li>
+    <li><strong>El movimiento del equipo</strong> durante el escaneo (acelerómetro y giroscopio). Se guarda para
+    comprobar si mejora las medidas.</li>
+    <li><strong>Los planos que importas</strong> (PDF o JSON) y lo que la app lee de ellos.</li>
+    <li><strong>Tu clave de Claude,</strong> si la pones. Queda en el Llavero de ese equipo y no se copia a ningún otro
+    lado.</li>
+  </ul>
+  <p>Todo, menos la clave, queda en la carpeta de Bob3D, que puedes ver en la app Archivos.</p>
+
+  <h2>Cuándo sale algo de tu equipo</h2>
+  <ul>
+    <li><strong>Cuando pides algo con IA:</strong> leer el espacio, leer un plano o razonar las paredes. La app le
+    manda a Claude, el modelo de Anthropic, lo que hace falta para esa tarea: las fotos del espacio, la página del plano
+    o las medidas. Va directo de tu equipo a Anthropic, con tu clave. Anthropic trata esos datos según sus condiciones y
+    su <a href="https://www.anthropic.com/legal/privacy">política de privacidad</a>.</li>
+    <li><strong>Si usas tu propio Mac</strong> en la misma red wifi en vez de la clave, esas fotos y medidas van a ese
+    Mac, que se las pasa a Claude.</li>
+    <li><strong>Si tú compartes un escaneo</strong>, por ejemplo por AirDrop, va completo a donde tú lo mandes,
+    incluidos la ubicación y el movimiento que guardó.</li>
+  </ul>
+  <p>Fuera de eso, la app no manda nada: ni a Claude ni a nosotros.</p>
+
+  <h2>TestFlight</h2>
+  <p>Mientras pruebas Bob3D con TestFlight, Apple puede mandarnos los informes de fallos, el modelo del equipo, la
+  versión de iOS y los comentarios y capturas que tú nos envíes desde TestFlight. Apple los trata según su
+  <a href="https://www.apple.com/legal/privacy/">política de privacidad</a>.</p>
+
+  <h2>Borrar tus datos</h2>
+  <ul>
+    <li>Borra un escaneo o un plano en la app o en Archivos.</li>
+    <li>En «Clave de Claude», toca «Borrar la clave de este equipo».</li>
+    <li>Si borras la app, se borra todo lo que guardó.</li>
+  </ul>
+
+  <h2>Cambios</h2>
+  <p>Si cambia esta política, la actualizamos en esta página con la fecha nueva.</p>
+
+  <h2>Contacto</h2>
+  <p>Si tienes preguntas sobre tus datos, escríbenos desde la app TestFlight, en la página de Bob3D, con la opción para
+  enviar comentarios.</p>
+</main>
+</body>
+</html>
