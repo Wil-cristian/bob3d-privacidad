@@ -45,7 +45,7 @@
 <body>
 <main>
   <h1>Política de privacidad de Bob3D</h1>
-  <p class="fecha">Vigente desde el 8 de noviembre de 2026.</p>
+  <p class="fecha">Vigente desde el 10 de noviembre de 2026.</p>
 
   <p>Bob3D mide espacios con el LiDAR del iPhone o del iPad y pone el plano sobre el piso real. Esta página dice qué
   datos usa la app, dónde quedan y cuándo salen de tu equipo.</p>
@@ -55,8 +55,9 @@
     <ul>
       <li>Bob3D no tiene cuentas ni servidores propios. Lo que haces en la app queda en tu equipo.</li>
       <li>Solo cuando pides algo con IA, la app le manda a Claude, de Anthropic, lo que hace falta para esa tarea, con tu
-      propia clave.</li>
-      <li>La app no le manda a nadie tu ubicación ni el movimiento del equipo.</li>
+      propia clave o, en la versión de prueba, con una clave de prueba de Bob3D.</li>
+      <li>Si tú lo decides, puedes mandarnos por correo el informe de una prueba. Sale solo cuando tocas Enviar.</li>
+      <li>La app no le manda a nadie tu ubicación.</li>
       <li>No hay publicidad, ni analítica, ni rastreo.</li>
     </ul>
   </section>
@@ -70,17 +71,28 @@
     <li><strong>El movimiento del equipo</strong> durante el escaneo (acelerómetro y giroscopio). Se guarda para
     comprobar si mejora las medidas.</li>
     <li><strong>Los planos que importas</strong> (PDF o JSON) y lo que la app lee de ellos.</li>
+    <li><strong>El registro de cada prueba:</strong> los pasos del escaneo, lo que calculó la app, lo que respondió la IA,
+    el modelo del equipo y la versión de iOS. Sirve para que nos lo mandes si quieres; no sale solo.</li>
+    <li><strong>Tu opinión de una prueba,</strong> si la das al mandar el informe.</li>
     <li><strong>Tu clave de Claude,</strong> si la pones. Queda en el Llavero de ese equipo y no se copia a ningún otro
     lado.</li>
+    <li><strong>Lo que gastó la clave de prueba</strong> en el día, en el Llavero de ese equipo, para cortarla al llegar a
+    su tope.</li>
   </ul>
-  <p>Todo, menos la clave, queda en la carpeta de Bob3D, que puedes ver en la app Archivos.</p>
+  <p>Todo, menos las claves y el gasto del día, queda en la carpeta de Bob3D, que puedes ver en la app Archivos.</p>
 
   <h2>Cuándo sale algo de tu equipo</h2>
   <ul>
     <li><strong>Cuando pides algo con IA:</strong> leer el espacio, leer un plano o razonar las paredes. La app le
     manda a Claude, el modelo de Anthropic, lo que hace falta para esa tarea: las fotos del espacio, la página del plano
-    o las medidas. Va directo de tu equipo a Anthropic, con tu clave. Anthropic trata esos datos según sus condiciones y
-    su <a href="https://www.anthropic.com/legal/privacy">política de privacidad</a>.</li>
+    o las medidas. Va directo de tu equipo a Anthropic, con tu clave o, si no pusiste una, con la clave de prueba de
+    Bob3D, que tiene un tope de gasto por equipo y por día. Anthropic trata esos datos según sus condiciones y su
+    <a href="https://www.anthropic.com/legal/privacy">política de privacidad</a>.</li>
+    <li><strong>Cuando nos mandas el informe de una prueba</strong> («Enviar a Bob3D»): se abre tu correo con un mensaje
+    para <a href="mailto:will.dj1923@gmail.com">will.dj1923@gmail.com</a> que lleva el registro de la prueba, tu
+    opinión, los archivos del escaneo (la forma, las medidas y el movimiento del equipo), unas vistas del 3D y, si lo
+    dejas, hasta 8 fotos reducidas del escaneo. Nunca lleva la ubicación. Sale solo si tú tocas Enviar, desde tu propio
+    correo, y lo usamos solo para mejorar Bob3D.</li>
     <li><strong>Si usas tu propio Mac</strong> en la misma red wifi en vez de la clave, esas fotos y medidas van a ese
     Mac, que se las pasa a Claude.</li>
     <li><strong>Si tú compartes un escaneo</strong>, por ejemplo por AirDrop, va completo a donde tú lo mandes,
@@ -98,6 +110,7 @@
     <li>Borra un escaneo o un plano en la app o en Archivos.</li>
     <li>En «Clave de Claude», toca «Borrar la clave de este equipo».</li>
     <li>Si borras la app, se borra todo lo que guardó.</li>
+    <li>Si nos mandaste un informe y quieres que lo borremos, escríbenos y lo borramos.</li>
   </ul>
 
   <h2>Cambios</h2>
